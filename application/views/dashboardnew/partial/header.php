@@ -1,5 +1,5 @@
 <?php
-  $general = $this->db->get('general')->row_array();
+$general = $this->db->get('general')->row_array();
 ?>
 
 <!DOCTYPE html>
@@ -31,9 +31,13 @@
 	<link rel="stylesheet" href="<?php echo base_url() ?>assets/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
 
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/fullcalendar/main.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap5.min.css">
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap5.min.css">
 
-
+	<style>
+		figure td {
+			border-style: none !important;
+		}
+	</style>
 </head>
 
 <body>

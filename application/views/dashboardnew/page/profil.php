@@ -1,12 +1,12 @@
 <?php $this->load->view('dashboardnew/partial/header'); ?>
 <?php $this->load->view('dashboardnew/partial/menu'); ?>
 <?php
-  $general = $this->db->get('general')->row_array();
+$general = $this->db->get('general')->row_array();
 ?>
 
 <main class="main">
 
-<div class="site-breadcrumb" style="background-image: url(<?= base_url('assets/upload/images/breadcumb/').$general['breadcumb']?>)">
+	<div class="site-breadcrumb" style="background-image: url(<?= base_url('assets/upload/images/breadcumb/') . $general['breadcumb'] ?>)">
 		<div class="container">
 			<h2 class="breadcrumb-title"><?= $subjudul ?></h2>
 			<ul class="breadcrumb-menu">
@@ -21,15 +21,15 @@
 		<div class="container">
 			<div class="row">
 				<div class="col">
-					
-						<h3 class="mb-3"><?= $subjudul ?></h3>
-  
-                        <?= $profil->profil ?>
-  
-						
-					</div>
-					
-				
+
+					<h3 class="mb-3"><?= $subjudul ?></h3>
+
+					<?= $profil->profil ?>
+
+
+				</div>
+
+
 			</div>
 		</div>
 	</div>
